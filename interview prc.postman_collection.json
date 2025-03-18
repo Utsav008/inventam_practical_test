@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "9f79d3c4-b180-4933-9b5c-35409a686f60",
+		"name": "interview prc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34479514"
+	},
+	"item": [
+		{
+			"name": "getAverageBudget",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:4000/project/getAverageBudget"
+			},
+			"response": []
+		},
+		{
+			"name": "getCompletedProjects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:4000/project/getCompletedProjects"
+			},
+			"response": []
+		},
+		{
+			"name": "getTopManager",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:4000/project/getTopManager"
+			},
+			"response": []
+		},
+		{
+			"name": "getSameTeamProjects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:4000/project/getSameTeamProjects"
+			},
+			"response": []
+		},
+		{
+			"name": "category/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"name\": \"headphones\",\n    \"parentId\": \"67d9b23a8b20a23f164d6ca2\"\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/category/add"
+			},
+			"response": []
+		},
+		{
+			"name": "category/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"id\": \"67d9abc665292bec342cd4d2\",\n    \"name\": \"Laptops\"\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/category/update"
+			},
+			"response": []
+		},
+		{
+			"name": "category/list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"id\": \"67d9abc665292bec342cd4d2\",\n    \"name\": \"Laptops\"\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/category/list"
+			},
+			"response": []
+		},
+		{
+			"name": "category/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"id\": \"67d9abc665292bec342cd4d2\",\n    \"name\": \"Laptops\"\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/category/delete/67d9aba728b308ce9adfd6de"
+			},
+			"response": []
+		},
+		{
+			"name": "category/getByParentId",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"id\": \"67d9abc665292bec342cd4d2\",\n    \"name\": \"Laptops\"\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:4000/category/getByParentId/67d9ab82cde28fd53385b61e"
+			},
+			"response": []
+		}
+	]
+}
